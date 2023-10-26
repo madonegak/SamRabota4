@@ -1,9 +1,9 @@
 #include <iostream>
-
+using namespace std;
 int main() {
   double A;
-  std::cout << "Enter integer number A(>1): ";
-  std::cin >> A;
+  cout << "Enter integer number A(>1): ";
+  cin >> A;
 
   int N = 1;
   double sum = 1.0;
@@ -13,10 +13,9 @@ int main() {
     sum += 1.0 / N;
   }
 
-  std::cout
-      << "The smallest integer N for which the sum 1 + 1/2 + ... + 1/N > A: "
-      << N << std::endl;
-  std::cout << "Sum of integers: " << sum << std::endl;
+  cout << "The smallest integer N for which the sum 1 + 1/2 + ... + 1/N > A: "
+       << N << endl;
+  cout << "Sum of integers: " << sum << endl;
 
   return 0;
 }
